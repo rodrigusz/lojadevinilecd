@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav-bar></nav-bar>
+
+    <carousel-bar class="centro-txt"></carousel-bar>
+
+    <br>
+
+    <div class="container">
+        <div class="left">
+            <a style="color:black" class="link" href="#" onclick="cresc()">Crescente |</a>
+            <a style="color:black" class="link" href="#" onclick="decresc()">Decrescente</a>
+        </div>
+
+        <div class="right select-box">
+            <select onchange="categoria(this.value)" aria-label="Default select example">
+                <option selected="">Categorias</option>
+                <option value="">Vinis</option>
+                <option value="">Cds</option>
+            </select>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    
+    <div class="container" id="produtos-container"></div>
+    <br>
+
+    <script src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
